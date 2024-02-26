@@ -1,0 +1,30 @@
+@import './index.scss';
+::-webkit-scrollbar {
+    width: 4px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: $darkest-blue; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* color of the thumb */
+    border-radius: 6px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the thumb on hover */
+}
+
+.app-container {    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: $darker-blue;
+    width: 1400px;
+    max-width: calc(100vw - 24px);
+    height: fit-content;
+    min-height: 110vh;
+    border-radius: 10px;
+    padding: 10px;
+}

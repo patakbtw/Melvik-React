@@ -1,0 +1,10 @@
+@import "./nullStyle.scss";
+
+html {
+  $darkest-blue: rgb(7, 15, 43);
+  $darker-blue: rgb(27, 26, 85);
+  $normal-blue: rgb(83, 92, 145);
+  $lighter-blue: rgb(146, 144, 195);
+  background-color: $darkest-blue;
+  padding: 10px;
+}

@@ -1,0 +1,11 @@
+$darkest-blue: rgb(7, 15, 43);
+$darker-blue: rgb(27, 26, 85);
+$normal-blue: rgb(83, 92, 145);
+$lighter-blue: rgb(146, 144, 195);
+.header {
+    width: 100%;
+    height: fit-content;
+    min-height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
