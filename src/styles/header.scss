@@ -1,11 +1,42 @@
-$darkest-blue: rgb(7, 15, 43);
-$darker-blue: rgb(27, 26, 85);
-$normal-blue: rgb(83, 92, 145);
-$lighter-blue: rgb(146, 144, 195);
+@import "variables";
 .header {
+  width: 100%;
+  height: fit-content;
+  min-height: 100px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
     width: 100%;
-    height: fit-content;
-    min-height: 100px;
-    border: 2px solid white;
-    border-radius: 10px;
+    & li {
+      border-radius: 10px;
+      background-color: $darkest-blue;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      transition: border-radius 0.3s ease;
+      &:hover {
+        border-radius: 3px;
+      }
+    }
+    & a {
+      color: $lighter-blue;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+      font-weight: inherit;
+      text-align: center;
+    }
+  }
 }
