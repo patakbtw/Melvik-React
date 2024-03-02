@@ -4,4 +4,9 @@
   border: 2px solid white;
   border-radius: 10px;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
 }
