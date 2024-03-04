@@ -1,12 +1,13 @@
+import { ReactElement } from 'react'
 import '../styles/body.scss'
-import Sidebar from './Sidebar'
-import Catalog from './Catalog'
-export default function Body(){
+interface BodyProps{
+    children: ReactElement[];
+}
+export default function Body({children}: BodyProps){
 
     return(
         <div className="body">
-            <Sidebar></Sidebar>
-            <Catalog></Catalog>
+            {children}
         </div>
     )
 }
